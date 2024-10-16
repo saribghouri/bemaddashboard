@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Delete, Edit, ReceiptLong } from "@mui/icons-material";
 import CustomModal from "@/components/modal/modal";
 import { useDisclosure } from "@nextui-org/react";
-import AddDataContent from "@/components/AddDataContent/AddDataContent";
+// import AddDataContent from "@/components/AddDataContent/AddDataContent";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SelectGroupTwo from "@/components/SelectGroup/SelectGroupTwo";
@@ -943,10 +943,14 @@ export default function Page() {
                   Stock Description
                 </label>
                 <JoditEditor
-                  ref={editor}
-                  value={content}
-                  onChange={(newContent) => setContent(newContent)}
-                />
+                ref={editor}
+                value={content}
+                onChange={(newContent) => setContent(newContent)}
+                >
+
+                </JoditEditor>
+                  
+                
               </div>
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
