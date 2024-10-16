@@ -71,7 +71,7 @@ export default function AddNewStock() {
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-2 xl:grid-cols-4 2xl:gap-9">
-          {carData.map((car) => (
+          {/* {carData.map((car) => (
             <CarCardCustom
               key={car.id}
               id={car.id}
@@ -82,7 +82,7 @@ export default function AddNewStock() {
               year={car.year}
               name={car.name}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </DefaultLayout>

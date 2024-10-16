@@ -21,15 +21,15 @@ export default function RootLayout({
   
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const data = localStorage.getItem("user");
-      if (data) {
-        const user = JSON.parse(data);
-        if (!user.id) {
-          router.push("/login");
-        }
-      } else {
-        router.push("/login");
-      }
+      // const data = localStorage.getItem("user");
+      // if (data) {
+      //   const user = JSON.parse(data);
+      //   if (!user.id) {
+      //     router.push("/login");
+      //   }
+      // } else {
+      //   router.push("/login");
+      // }
     }
     setTimeout(() => setLoading(false), 1000);
   }, []);
