@@ -890,7 +890,7 @@ const Page = () => {
                   {imagegallery.length > 0 ? (
                     <div className="flex items-center justify-center">
                       {imagegallery.map((image: any) => (
-                        <img key={image} width="100px" height="100px" />
+                        <img key={image} src={image} width="100px" height="100px" />
                       ))}
                     </div>
                   ) : (
